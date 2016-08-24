@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel="stylesheet" type="text/css" href="css/mystyle.css"/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Safe our future</title>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/mystyle.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("#button-scroll").click(function () {
+                $('html, body').animate({
+                    scrollTop: $("#scroll-target").offset().top
+                }, 2000);
+            });
+        });
+    </script>
+</head>
+
+
+<body>
+
+<div class="container-fluid">
+
+    <div class="header-container">
+
+        <!--navigation-->
+        <div class="navigation row visible-lg">
+            <div class="col-lg-12">
+                <ul class="nav navbar-nav navbar-left">
+                    <li>
+                        <a href="#"><img src="images/SaveOurFuture-Logo3.png" class="logo-desktop"></a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav main-nav">
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Footprint Calculator</a></li>
+                    <li><a href="#">Sponsors</a></li>
+                    <li><a href="#">How it works</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Get in touch</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right login-join">
+                    <li><a href="#" class="btn btn-default search-button" role="button"><span
+                            class="glyphicon glyphicon-search"></span></a></li>
+                    <li><a href="#" class="btn btn-default login-margin" role="button">Login in</a></li>
+                    <li><a href="#" class="btn btn-warning" role="button">Join us</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="navigation row visible-md visible-sm visible-xs">
+            <div class="col-md-4 col-sm-4 col-xs-4">
+                <ul class="nav navbar-nav navbar-left button-dropdown">
+                    <button type="button" data-toggle="dropdown" class="button-navigation"><span
+                            class="glyphicon glyphicon-menu-hamburger"></span></button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Footprint Calculator</a>
+                        <li>
+                        <li><a href="#">Sponsors</a></li>
+                        <li><a href="#">How it works</a></li>
+                        <li><a href="#">News</a>
+                        <li>
+                        <li><a href="#">Get in touch</a></li>
+                    </ul>
+                </ul>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-4">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#"><img src="images/SaveOurFuture-Logo3.png" class="logo-mobile"></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-4 login-join-mobile">
+                <a href="#" class="btn btn-default" role="button">Login in</a>
+                <a href="#" class="btn btn-warning" role="button">Join us</a>
+            </div>
+        </div>
+
+         <!--carousel-->
+
+        <div class="container-carousel">
+            <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+
+                <div class="carousel-inner" role="listbox">
+                    <div class="item item-position active">
+                        <h1>Want to support our cause?</h1>
+                        <p><a class="btn btn-lg btn-default button-lower" href="#" role="button">Become a partner</a>
+                        </p>
+                    </div>
+                    <div class="item item-position">
+                        <h1>Help Safe Our Future!</h1>
+                        <p><a class="btn btn-lg btn-default button-lower" id="button-scroll" href="#" role="button">Find
+                            out how</a></p>
+                    </div>
+                    <div class="item item-position">
+                        <h1>How big is your carboon footprint?</h1>
+                        <p><a class="btn btn-lg btn-default button-lower" href="#" role="button">Footprint
+                            calculator</a>
+                        </p>
+                    </div>
+                </div>
+                <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+         </div>
+    </div>
+
+    <!--counters-->
+
+    <div class="counters-container">
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                <div id="circle1">
+                    <div id="text1">
+                        <h1>No of schools</h1>
+                        <p>365</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                <div id="circle2">
+                    <div id="text1">
+                        <h1>No of pupils</h1>
+                        <p>1,235</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                <div id="circle3">
+                    <div id="text1">
+                        <h1>No of challenges complited</h1>
+                        <p>10,669</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--video-->
+
+    <div class="container-video">
+        <h2 class="video-title">How to affect our planet</h2>
+        <video class="video-centre" width="1000" controls>
+            <source src="video/Save-Our-Future.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <!--three steps-->
+
+    <div class="three-steps" id="scroll-target">
+        <h3 class="three-steps-title">How to make a diffrence?</h3>
+        <div class="row three-steps-content">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 three-steps-item1">
+                <h1>1</h1>
+                <h3>Measure your carbon footprint</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.</p>
+                <p>
+                    <a href="#" class="btn btn-warning" role="button">Carbon Footprint Calculator</a>
+                </p>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 three-steps-item2">
+                <h1>2</h1>
+                <h3>Join the challenge</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.</p>
+                <p>
+                    <a href="#" class="btn btn-warning" role="button">Get started now</a>
+                </p>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 three-steps-item3">
+                <h1>3</h1>
+                <h3>Be a Climate superhero</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.</p>
+                <p>
+                    <a href="#" class="btn btn-warning" role="button">Meet the rest</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!--sponsors-->
+
+    <div class="sponsors visible-lg visible-mg hidden-xs">
+        <h3 class="sponsors-title">Sponsors</h3>
+        <div class="row sponsors-first-line">
+            <div class="sponsor-list col-lg-2 col-md-offset-1">
+                <p>sponsor 1</p>
+            </div>
+            <div class="sponsor-list col-lg-2">
+                <p>sponsor 2</p>
+            </div>
+            <div class="sponsor-list col-lg-2">
+                <p>sponsor 3</p>
+            </div>
+            <div class="sponsor-list col-lg-2">
+                <p>sponsor 4</p>
+            </div>
+            <div class="sponsor-list col-lg-2">
+                <p>sponsor 5</p>
+            </div>
+        </div>
+        <div class="row sponsors-second-line">
+            <div class="sponsor-list col-lg-2 col-md-offset-1">
+                <p>sponsor 6</p>
+            </div>
+            <div class="sponsor-list col-lg-2">
+                <p>sponsor 7</p>
+            </div>
+            <div class="sponsor-list col-lg-2">
+                <p>sponsor 8</p>
+            </div>
+            <div class="sponsor-list col-lg-2">
+                <p>sponsor 9</p>
+            </div>
+            <div class="sponsor-list col-lg-2">
+                <p>sponsor 10</p>
+            </div>
+        </div>
+        <div class="row sponsor-button">
+            <div class="col-lg-12">
+                <a class="btn btn-default" href="#" role="button">Become a sponsor</a>
+            </div>
+        </div>
+    </div>
+
+    <!--footer-->
+
+    <footer class="footer-homepage">
+        <div class="footer-header row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <h3>Subscribe to our newsletter</h3>
+                <form class="form-inline footer-email">
+                    <input type="email" class="form-control" size="50" placeholder="Your e-mail here" required>
+                    <button type="button" class="btn btn-danger">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-social visible-lg hidden-md hidden-sm hidden-xs">
+            <div class="row">
+                <div class="col-lg-3 social-list">
+                    <p>Facebook</p>
+                </div>
+                <div class="col-lg-3 social-list">
+                    <p>Twitter</p>
+                </div>
+                <div class="col-lg-3 social-list">
+                    <p>Istagram</p>
+                </div>
+                <div class="col-lg-3 social-list">
+                    <p>Snapchat</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-social-mobile hidden-lg visible-md visible-sm visible-xs">
+            <ul class="list-unstyled">
+                <li>Facebook</li>
+                <li>Twitter</li>
+                <li>Istagram</li>
+                <li>Snapchat</li>
+            </ul>
+        </div>
+
+        <div class="footer-lists">
+            <ul class="list-inline">
+                <li class="footer-list-item"><a href="#">About us</a></li>
+                <li class="footer-list-item"><a href="#">Join up</a></li>
+                <li class="footer-list-item"><a href="#">News</a></li>
+                <li><a href="#">Get in touch</a></li>
+            </ul>
+        </div>
+        <div class="footer-text-bottom">
+            <p>Address and copyrights go here</p>
+        </div>
+
+    </footer>
+
+
+</div>
+
+
+</body>
+</html>

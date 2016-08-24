@@ -1,0 +1,222 @@
+
+.container-fluid {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.header-container {
+    border-bottom: 1px solid;
+    margin-top: 0;
+}
+
+.logo-desktop {
+    width: 263px;
+    height: 186px ;
+    margin-right: 0;
+}
+
+.logo-mobile {
+    width: 263px;
+    height: 186px ;
+}
+
+.search-button {
+    border-radius: 50px;
+
+}
+
+.login-margin {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.login-join {
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+.login-join-mobile {
+    margin-top: 20px;
+    text-align: right;
+}
+.main-nav {
+    margin-top: 20px;
+}
+
+.main-nav li a {
+    color: black;!important;
+}
+
+.button-dropdown {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.navigation {
+    margin-bottom: 100px;
+}
+
+.backgroud-image {
+    text-align: center;
+}
+
+
+.our-values {
+    margin: 0 200px 0 200px;
+    text-align: center;
+}
+
+.mission-vision {
+    margin: 100px 200px 100px 200px;
+    text-align: center;
+
+}
+
+.video-title {
+    text-align: center;
+}
+
+.container-video {
+    margin: 50px 0px 0px 0px;!important;
+}
+
+.video-centre {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+.footer-homepage {
+    background-color: deepskyblue;
+    margin-top: 100px;
+}
+
+.footer-header {
+    text-align: center;
+    color: white;
+}
+
+.footer-email {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+}
+
+.footer-social {
+    text-align: center;
+    margin: 0 0 20px 280px;
+}
+.social-list {
+    border: 1px solid;
+    height: 100px; !important;
+    width: 100px; !important;
+    margin-right: 80px;
+    background-color: white;
+}
+
+.footer-text-bottom {
+    text-align: center;
+}
+
+.footer-lists {
+    text-align: center;
+    margin-bottom: 20px;
+    color: black;!important;
+}
+
+
+.footer-list-item {
+    border-right: 1px solid;
+}
+
+.footer-social-mobile {
+    text-align: center;
+    margin: 10px 0 10px 0;
+}
+
+
+@media only screen and (max-width: 767px) {
+
+    .logo-mobile {
+        width: 132px;
+        height: 93px ;
+    }
+
+    .login-join {
+        margin-right: 0;
+    }
+
+    .navigation {
+        margin-bottom: 50px;
+    }
+
+    .our-values h2 {
+        text-align: center;!important;
+    }
+
+    .our-values {
+        margin: 100px 50px 0 50px;
+        text-align: justify;
+    }
+
+    .mission-vision h2{
+        text-align: center;
+    }
+
+    .mission-vision {
+        margin: 100px 200px 100px 200px;
+        text-align: justify;
+
+    }
+
+    .container-video {
+        margin: 40px 0px 40px 0px !important;
+    }
+
+
+    .footer-homepage {
+        margin-top: 50px;
+    }
+
+}
+
+
+@media only screen and (max-width: 992px){
+
+    .login-join {
+        margin-right: 0;
+    }
+
+    .navigation {
+        margin-bottom: 50px;
+    }
+
+    .our-values h2 {
+        text-align: center;!important;
+    }
+
+    .our-values {
+        margin: 50px 50px 0 50px;
+        text-align: left;!important;
+    }
+
+    .mission-vision h2{
+        text-align: center;
+    }
+
+    .mission-vision {
+        margin: 100px 50px 100px 50px;
+        text-align: left;!important;
+
+    }
+
+    .container-video {
+        margin: 50px 0px 0px 0px;!important;
+    }
+
+}
+
