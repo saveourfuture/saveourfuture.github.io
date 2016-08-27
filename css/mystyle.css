@@ -1,58 +1,20 @@
-.container-fluid {
-    padding-right: 0px;
-    padding-left: 0px;
+/*navigation*/
+
+.logo {
+    display: block;
+    width:160px;
+    max-width: 100%;
+    max-height:119px;
+    height: auto;
 }
 
-.header-container {
-    margin-top: 0px;
+.button-hamburger {
+    width: 60px;
+    height: 60px;
 }
 
-.logo-desktop {
-    width: 263px;
-    height: 186px ;
-    margin-right: 0px;
-}
-
-.logo-mobile {
-    width: 263px;
-    height: 186px ;
-}
-
-.search-button {
-    border-radius: 50px;
-
-}
-
-.login-margin {
-    margin-left: 20px;
-    margin-right: 20px;
-}
-
-.login-join {
-    margin-top: 20px;
-    margin-right: 10px;
-}
-
-.login-join-mobile {
-    margin-top: 20px;
-    text-align: right;
-}
-
-.main-nav {
-    margin-top: 20px;
-}
-
-.main-nav li a {
-    color: black;!important;
-}
-
-.button-dropdown {
-    margin-top: 20px;
-    margin-left: 20px;
-}
-
-.navigation {
-    margin-bottom: 0px;
+#sofNav ul li a {
+    color: black;
 }
 
 .container-carousel {
@@ -238,18 +200,9 @@
 
 @media only screen and (max-width: 767px) {
 
-    .logo-mobile {
-        width: 132px;
-        height: 93px ;
-        margin-left: 40px;!important;
-    }
-
-    .login-join {
-        margin-right: 0px;
-    }
-
-    .navigation {
-        margin-bottom: 50px;
+    .logo {
+        width: 85px;
+        height: 60px;
     }
 
     .container-carousel {
@@ -312,18 +265,9 @@
 
 @media only screen and (max-width: 992px){
 
-    .login-join {
-        margin-right: 0px;
-    }
-
-    .logo-mobile {
-        width: 179px;
-        height: 122px ;
-        margin-left: 50px;
-    }
-
-    .navigation {
-        margin-bottom: 50px !important;
+    .logo {
+        width: 116px;
+        height: 80px;
     }
 
     .container-carousel {
@@ -363,5 +307,9 @@
         margin: 50px 0px 0px 0px;!important;
     }
 
+}
+
+.container-navigation {
+    mar
 }
 
