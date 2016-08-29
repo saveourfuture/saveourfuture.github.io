@@ -6,6 +6,7 @@
     max-width: 100%;
     max-height:119px;
     height: auto;
+    padding-top: 0;
 }
 
 .button-hamburger {
@@ -13,12 +14,28 @@
     height: 60px;
 }
 
+.navbar-background {
+    background-color: white;
+}
+
+#sofNav {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.image-logo {
+    padding: 0 0 0 15px;!important;
+}
+
 #sofNav ul li a {
     color: black;
 }
 
+/*carousel*/
+
 .container-carousel {
     height: auto;
+    margin-top: 200px;
 }
 
 .carousel-control.left, .carousel-control.right {
@@ -41,6 +58,8 @@
 .button-lower {
     margin-top: 50px;
 }
+
+/*counters*/
 
 .counters-container {
     margin-right: 50px;
@@ -82,13 +101,14 @@
     text-align: center;
 }
 
+/*video*/
 
 .video-title {
     text-align: center;
 }
 
 .container-video {
-    margin: 50px 0px 0px 0px;!important;
+    margin: 50px 0 0 0;!important;
 }
 
 .video-centre {
@@ -99,12 +119,14 @@
     height: auto;
 }
 
+/*three steps*/
+
 .three-steps {
     text-align: center;
 }
 
 .three-steps-title {
-   margin: 50px 0px 50px 0px;
+   margin: 50px 0 50px 0;
 }
 
 .three-steps-item1 {
@@ -122,35 +144,12 @@
     padding-right: 40px;
 }
 
-.sponsors {
-    text-align: center;
-}
-.sponsors-title {
-    margin: 100px 0px 100px 0px;
-}
 
-.sponsor-list p {
-    border: 1px solid;
-    height: 100px;!important;
-    width: 100px; !important;
-
-}
-
-.sponsors-second-line {
-    margin-top: 50px;
-}
-
-.sponsor-list {
-    margin-right: 10px;
-}
-
-.sponsor-button {
-    margin: 20px 25px 50px 0px;
-}
+/*footer*/
 
 .footer-homepage {
     background-color: deepskyblue;
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 .footer-header {
@@ -167,7 +166,7 @@
 
 .footer-social {
     text-align: center;
-    margin: 0px 0px 20px 280px;
+    margin: 0 0 20px 280px;
 }
 .social-list {
     border: 1px solid;
@@ -194,15 +193,20 @@
 
 .footer-social-mobile {
     text-align: center;
-    margin: 10px 0px 10px 0px;
+    margin: 10px 0 10px 0;
 }
+
+
+
+
 
 
 @media only screen and (max-width: 767px) {
 
     .logo {
-        width: 85px;
-        height: 60px;
+        width: 85px !important;
+        height: 60px !important;
+        margin-top: 10px;
     }
 
     .container-carousel {
@@ -218,23 +222,23 @@
     }
 
     .counters-container {
-        margin-top: 0px; !important;
-        margin-right: 0px;
-        margin-left: 0px;
+        margin-top: 0; !important;
+        margin-right: 0;
+        margin-left: 0;
     }
 
     #circle1 {
-        width: 150px;
-        height: 150px;
+        width: 150px !important;
+        height: 150px !important;
     }
     #circle2 {
-        width: 150px;
-        height: 150px;
+        width: 150px !important;
+        height: 150px !important;
     }
 
     #circle3 {
-        width: 150px;
-        height: 150px;
+        width: 150px !important;
+        height: 150px !important;
     }
 
     #text1 h1{
@@ -243,21 +247,42 @@
     }
 
     .container-video {
-        margin: 40px 0px 40px 0px !important;
+        margin: 40px 0 40px 0 !important;
+    }
+
+    .three-steps-title {
+        margin: 25px 0 25px 0 !important;
     }
 
     .three-steps-content {
-        margin-left: 100px;
-        margin-right: 100px;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
     }
 
     .three-steps-item2 {
         margin-top: 20px;
         margin-bottom: 20px;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    .three-steps-item1 {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+
+    .three-steps-item3 {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
     }
 
     .footer-homepage {
         margin-top: 50px;
+    }
+
+    .footer-header h3{
+        font-size: 18px;!important;
     }
 
 }
@@ -280,8 +305,8 @@
 
     .counters-container {
         margin-top: 50px; !important;
-        margin-right: 0px;
-        margin-left: 0px;
+        margin-right: 0;
+        margin-left: 0;
     }
 
     #circle1 {
@@ -304,12 +329,11 @@
     }
 
     .container-video {
-        margin: 50px 0px 0px 0px;!important;
+        margin: 50px 0 0 0 !important;
     }
 
 }
 
-.container-navigation {
-    mar
+.button-size {
+    width: 150px;
 }
-

@@ -2,18 +2,17 @@
 <html lang="en">
 <head>
 
-    <link rel="stylesheet" type="text/css" href="css/getintouch.css"/>
-    <link rel="stylesheet" type="text/css" href="css/mystyle.css"/>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Safe our future</title>
+    <title>News</title>
 
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/mystyle.css">
+
+
+    <!--<link rel="stylesheet" type="text/css" href="css/mystyle.css">-->
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -25,15 +24,15 @@
     <script src="js/nav.js"></script>
 
 
-
-</head>
+    <link rel="stylesheet" type="text/css" href="css/mystyle.css"/>
+    <link rel="stylesheet" type="text/css" href="css/news.css"/>
 
 
 <body>
 
 <div class="container-fluid">
 
-<!--navigation-->
+    <!--navigation-->
 
     <div class="header-container">
 
@@ -70,96 +69,84 @@
             </div>
         </nav>
 
-        <div class="get-in-touch-text row">
+        <div class="news-text row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <h1 class="git-title">Get in touch</h1>
-                <p>We can help so feel free to ask</p>
+                <h1 class="news-title">News</h1>
+                <p>Updates from some of our schools</p>
             </div>
         </div>
 
     </div>
 
-<!--contact us-->
+    <!--articles-->
 
-    <div class="contact-container container">
-        <h4 class="contact-title text-center">Send us a message</h4>
-        <br>
+    <div class="articles-container container">
 
-        <div class="contact row">
+        <div class="news-type row hidden-lg">
+            <div class="col-md-4 col-sm-4 col-xs-4 news-type1"><ins>Schools</ins></div>
+            <div class="col-md-4 col-sm-4 col-xs-4 news-type2"><ins>Sponsors</ins></div>
+            <div class="col-md-4 col-sm-4 col-xs-4 hidden-xs"><ins>International news</ins></div>
+            <div class="col-md-4 col-sm-4 col-xs-4 vissible-xs"><ins>International</ins></div>
+        </div>
 
-            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 form-group">
-
-                    <div class="row">
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 form-group">
-                            <label for="name">Your name (required):</label>
-                            <input class="form-control" id="name" name="name" type="text" required>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 form-group">
-                            <label for="email">Your e-mail (required):</label>
-                            <input class="form-control" id="email" name="email" type="email" required>
-                         </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 form-group">
-                            <label for="subject">Subject:</label>
-                            <input class="form-control" id="subject" name="subject" type="text">
-                        </div>
-                    </div>
-
-                    <div class="row visible-lg visible-md">
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 form-group">
-                            <label for="comment">Your message:</label>
-                            <textarea class="form-control" rows="12" id="comment"></textarea>
-                        </div>
-                    </div>
-
-                    <div class="row visible-sm visible-xs">
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 form-group">
-                            <label for="comment">Your message:</label>
-                            <textarea class="form-control" rows="6" id="comment"></textarea>
-                        </div>
-                    </div>
-
-
-                    <div class="row">
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 form-group">
-                            <button class="btn btn-warning" type="submit" >Send</button>
-                        </div>
-                    </div>
+        <div class="news-articles row">
+            <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 articles-images">
+                <img src="#" class="img-responsive article-image" alt="article1-img">
             </div>
+            <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12 articles-content">
+                <h3>News No. 1</h3>
+                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex
+                    ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                    eu fugiat
+                    nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                    mollit
+                    anim id est laborum."</p>
+                <a href="#" class="btn btn-link button-read-more">Read more...</a>
+            </div>
+        </div>
 
-            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 git-map">
-                <div class="row">
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
-                        <br>
-                        <p>Address: Chicago, US</p>
-                        <p>Tel. +00 1515151515</p>
-                        <p>E-mail: myemail@something.com</p>
-                    </div>
-                </div>
-                <br>
+        <div class="news-articles row">
+            <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 articles-images">
+                <img src="#" class="img-responsive article-image" alt="article1-img">
+            </div>
+            <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12 articles-content">
+                <h3>News No. 2</h3>
+                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex
+                    ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                    eu fugiat
+                    nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                    mollit
+                    anim id est laborum."</p>
+                <a  href="#" class="btn btn-link button-read-more">Read more...</a>
+            </div>
+        </div>
 
-                <div class="row">
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
-                        <p>Lorem ipsum dolor sit amet</p>
-                        <p>Lorem ipsum dolor sit amet</p>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <div class="embed-responsive embed-responsive-16by9">
-                            <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9544.365322936961!2d-6.233677655757251!3d53.269983212101344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4867090b5444013d%3A0x2600c7a819bb0531!2sSandyford%2C+Co.+Dublin!5e0!3m2!1sen!2sie!4v1472341371185"></iframe>
-                        </div>
-                    </div>
-                </div>
+        <div class="news-articles row">
+            <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 articles-images">
+                <img src="#" class="img-responsive article-image" alt="article1-img">
+            </div>
+            <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12 articles-content">
+                <h3>News No. 3</h3>
+                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex
+                    ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                    eu fugiat
+                    nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                    mollit
+                    anim id est laborum."</p>
+                <a href="#" class="btn btn-link button-read-more">Read more...</a>
             </div>
         </div>
     </div>
+
 
     <!--footer-->
 
@@ -168,7 +155,7 @@
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <h3>Subscribe to our newsletter</h3>
                 <form class="form-inline footer-email">
-                    <input type="email" class="form-control" size="50" placeholder="Your email here" required>
+                    <input type="email" class="form-control" size="50" placeholder="Your e-mail here" required>
                     <button type="button" class="btn btn-danger">Subscribe</button>
                 </form>
             </div>

@@ -20,16 +20,8 @@
     <![endif]-->
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/nav.js"></script>
 
-    <script>
-        $(document).ready(function () {
-            $("#button-scroll").click(function () {
-                $('html, body').animate({
-                    scrollTop: $("#scroll-target").offset().top
-                }, 2000);
-            });
-        });
-    </script>
 </head>
 
 
@@ -40,57 +32,41 @@
     <div class="header-container">
 
         <!--navigation-->
-        <div class="navigation row visible-lg">
-            <div class="col-lg-12">
-                <ul class="nav navbar-nav navbar-left">
-                    <li>
-                        <a href="#"><img src="images/SaveOurFuture-Logo3.png" class="img-responsive center-block logo"></a>
-                    </li>
-                </ul>
-                <ul class="nav navbar-nav main-nav">
-                    <li><a href="#">About us</a></li>
-                    <li><a href="#">Footprint Calculator</a></li>
-                    <li><a href="#">Sponsors</a></li>
-                    <li><a href="#">How it works</a></li>
-                    <li><a href="#">News</a></li>
-                    <li><a href="#">Get in touch</a></li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right login-join">
-                    <li><a href="#" class="btn btn-default search-button" role="button"><span
-                            class="glyphicon glyphicon-search"></span></a></li>
-                    <li><a href="#" class="btn btn-default login-margin" role="button">Login in</a></li>
-                    <li><a href="#" class="btn btn-warning" role="button">Join us</a></li>
-                </ul>
-            </div>
-        </div>
 
-        <div class="navigation row visible-md visible-sm visible-xs">
-            <div class="col-md-4 col-sm-4 col-xs-4">
-                <ul class="nav navbar-nav navbar-left button-dropdown">
-                    <button type="button" data-toggle="dropdown" class="button-navigation"><span
-                            class="glyphicon glyphicon-menu-hamburger"></span></button>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">About us</a></li>
+        <nav class="navbar navbar-fixed-top navbar-background">
+            <div class="container-fluid">
+
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed button-hamburger" data-toggle="collapse" data-target="#sofNav">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="glyphicon glyphicon-menu-hamburger"></span>
+                    </button>
+
+                    <a href="#" class="navbar-brand image-logo">
+                        <img src="images/SaveOurFuture-Logo3.png" class="img-responsive logo" alt="logo">
+                    </a>
+
+                </div>
+
+                <div class="collapse navbar-collapse pull-right" id="sofNav">
+                    <ul class="nav navbar-nav">
+                        <li><a href="aboutus.html">About us</a></li>
                         <li><a href="#">Footprint Calculator</a></li>
                         <li><a href="#">Sponsors</a></li>
                         <li><a href="#">How it works</a></li>
-                        <li><a href="#">News</a></li>
-                        <li><a href="#">Get in touch</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="getintouch.html">Get in touch</a></li>
                     </ul>
-                </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+                        <li><a href="#">Login in</a></li>
+                        <li><a href="#">Join us</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="col-md-4 col-sm-4 col-xs-4">
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a href="#"><img src="images/SaveOurFuture-Logo3.png" class="img-responsive center-block logo"></a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-md-4 col-sm-4 col-xs-4 login-join-mobile">
-                <a href="#" class="btn btn-default" role="button">Login in</a>
-                <a href="#" class="btn btn-warning" role="button">Join us</a>
-            </div>
-        </div>
+        </nav>
+
+
 
          <!--carousel-->
 
@@ -184,7 +160,7 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore magna aliqua.</p>
                 <p>
-                    <a href="#" class="btn btn-warning" role="button">Carbon Footprint Calculator</a>
+                    <a href="#" class="btn btn-warning button-size" role="button">Footprint Calculator</a>
                 </p>
             </div>
 
@@ -194,7 +170,7 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore magna aliqua.</p>
                 <p>
-                    <a href="#" class="btn btn-warning" role="button">Get started now</a>
+                    <a href="#" class="btn btn-warning button-size" role="button">Get started now</a>
                 </p>
             </div>
 
@@ -204,53 +180,8 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore magna aliqua.</p>
                 <p>
-                    <a href="#" class="btn btn-warning" role="button">Meet the rest</a>
+                    <a href="#" class="btn btn-warning button-size" role="button">Meet the rest</a>
                 </p>
-            </div>
-        </div>
-    </div>
-
-    <!--sponsors-->
-
-    <div class="sponsors visible-lg visible-mg hidden-xs">
-        <h3 class="sponsors-title">Sponsors</h3>
-        <div class="row sponsors-first-line">
-            <div class="sponsor-list col-lg-2 col-md-offset-1">
-                <p>sponsor 1</p>
-            </div>
-            <div class="sponsor-list col-lg-2">
-                <p>sponsor 2</p>
-            </div>
-            <div class="sponsor-list col-lg-2">
-                <p>sponsor 3</p>
-            </div>
-            <div class="sponsor-list col-lg-2">
-                <p>sponsor 4</p>
-            </div>
-            <div class="sponsor-list col-lg-2">
-                <p>sponsor 5</p>
-            </div>
-        </div>
-        <div class="row sponsors-second-line">
-            <div class="sponsor-list col-lg-2 col-md-offset-1">
-                <p>sponsor 6</p>
-            </div>
-            <div class="sponsor-list col-lg-2">
-                <p>sponsor 7</p>
-            </div>
-            <div class="sponsor-list col-lg-2">
-                <p>sponsor 8</p>
-            </div>
-            <div class="sponsor-list col-lg-2">
-                <p>sponsor 9</p>
-            </div>
-            <div class="sponsor-list col-lg-2">
-                <p>sponsor 10</p>
-            </div>
-        </div>
-        <div class="row sponsor-button">
-            <div class="col-lg-12">
-                <a class="btn btn-default" href="#" role="button">Become a sponsor</a>
             </div>
         </div>
     </div>
