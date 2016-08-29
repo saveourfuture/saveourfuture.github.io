@@ -115,7 +115,7 @@
     margin-left: auto;
     margin-right: auto;
     display: block;
-    width: 100%;
+    width: 75%;
     height: auto;
 }
 
@@ -287,6 +287,10 @@
         font-size: 18px;!important;
     }
 
+    .video-centre {
+        width: 100%;
+    }
+
 }
 
 
@@ -332,6 +336,10 @@
 
     .container-video {
         margin: 50px 0 0 0 !important;
+    }
+
+    .video-centre {
+        width: 100%;
     }
 
 }
