@@ -90,6 +90,15 @@
     .contribution-dollar {
         padding-left: 0 !important;
     }
+    .sponsors-container {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    .sponsors-contact-row {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
 
 
 }
@@ -100,5 +109,19 @@
         padding-left: 50px !important;
     }
 
+    .sponsors-contact-row {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
 }
 
+.sponsors-container {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.sponsors-contact-row {
+    padding-left: 100px;
+    padding-right: 100px;
+}
