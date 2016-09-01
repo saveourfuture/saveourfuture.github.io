@@ -1,10 +1,4 @@
-<!--
-* Author:	Marzena Kacprzak
-*	Assignment:	Minor	Project	– Save Our Future
-*	Student	ID:
-*	Date	:	2016/08/29
-*	Ref:	getbootstrap.com
--->
+
 
 
 $(document).ready(function() {
