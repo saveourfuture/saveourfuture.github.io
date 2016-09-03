@@ -1,0 +1,91 @@
+.joinup-text {
+    margin-top: 100px;
+    text-align: center;
+    height: 400px;
+
+}
+
+.joinup-title {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    color: black;
+}
+
+.joinup-texts {
+    text-align: justify;
+}
+
+.joinup-container {
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.create-acount-joinup h3 {
+    text-align: center;
+}
+
+.create-acount-joinup p {
+    text-align: center;
+}
+
+.joinup-button {
+    width: 100%;
+}
+
+@media only screen and (max-width: 767px) {
+
+    .joinup-container {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    .create-acount-joinup-col1 {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .joinup-schools {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    .joinup-schools-list {
+        width: 100%;
+        max-width: 750px !important;
+        height: auto;
+        margin-top: 40px;
+    }
+
+}
+
+
+
+@media only screen and (max-width: 992px) {
+
+    .joinup-container {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    .joinup-schools {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+}
+
+.joinup-schools {
+    margin-top: 50px;
+    text-align: center;
+    padding-left: 200px;
+    padding-right: 200px;
+    display: block;
+}
+
+.joinup-schools-list {
+    width: 350px;
+    height: 150px;
+    overflow: scroll;
+    overflow-x: scroll;
+    overflow-y: scroll;
+    text-align: left;
+}
