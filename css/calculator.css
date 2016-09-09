@@ -48,6 +48,12 @@
         height: auto;
     }
 
+    .tips-calculator {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+
 
 
 }
@@ -61,6 +67,11 @@
     }
 
     .quiz-container {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    .tips-calculator {
         padding-left: 0 !important;
         padding-right: 0 !important;
     }
@@ -159,5 +170,30 @@
     left:50%;
     padding:1rem;
     transform:translateY(-50%);
+    text-align: center;
+}
+
+.tips-calculator h2 {
+    text-align: center;
+}
+
+.tips-calculator p {
+    text-align: left;
+}
+
+.tips-leaf {
+    color: #449d44;
+}
+
+.tips-calculator {
+    padding-right: 200px;
+    padding-left: 200px;
+}
+
+.joinin-button {
+    width: 20%;
+}
+
+.tips-joinin {
     text-align: center;
 }
