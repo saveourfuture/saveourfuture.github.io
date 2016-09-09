@@ -10,7 +10,7 @@
     color: black;
 }
 
-.calculator-container {
+.calculator-header-container {
     padding-left: 200px;
     padding-right: 200px;
 }
@@ -23,9 +23,28 @@
         font-size: 30px;
     }
 
-    .calculator-container {
+    .calculator-header-container {
         padding-left: 0 !important;
         padding-right: 0 !important;
+    }
+
+    .calculator-texts-1 {
+        padding-left: 50px !important;
+        padding-right: 50px !important;
+    }
+
+    .calculator-texts-2 {
+        -webkit-column-count: 1!important;
+        -moz-column-count: 1 !important;
+        column-count: 1 !important;
+    }
+    .quiz-container {
+        padding-left: 0 !important;
+    }
+
+    .question-content {
+        width: 100%;
+        height: auto;
     }
 
 }
@@ -33,13 +52,64 @@
 
 @media only screen and (max-width: 992px) {
 
-    .calculator-container {
+    .calculator-header-container {
         padding-left: 0 !important;
         padding-right: 0 !important;
+    }
+
+    .quiz-container {
+        padding-left: 0 !important;
     }
 
 
 }
 
-.calculator-texts {
+.calculator-texts-1 {
+    text-align: center;
+    padding-left: 150px;
+    padding-right: 150px;
 }
+
+
+.calculator-texts-2 {
+    text-align: justify;
+    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+    column-gap: 40px;
+    width: 100% !important;
+}
+
+
+.calculator-texts-1 {
+    text-align: center;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+
+.quiz-container {
+    padding-left: 200px;
+
+}
+
+.next-click {
+    float: right !important;
+}
+
+.question-option {
+    text-align: center !important;
+}
+
+
+#panel, #flip, #panel2, #flip2, #panel3, #flip3, #panel4, #flip4 {
+    padding: 5px;
+    text-align: center;
+
+}
+
+#panel, #panel2, #panel3, #panel4{
+    padding: 20px;
+    display: none;
+}
+

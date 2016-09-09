@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel="stylesheet" type="text/css" href="css/calculator.css"/>
+    <link rel="stylesheet" type="text/css" href="css/joinup.css"/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Carbon Footprint Calculator</title>
+
+    <link rel="stylesheet" type="text/css" href="css/joinup.css"/>
+    <link rel="stylesheet" type="text/css" href="css/mystyle.css"/>
+
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/mystyle.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script src="js/nav.js"></script>
+
+
+
+</head>
+
+<body>
+
+
+
+
+<div data-type="page" id="question1">
+    <div class="question-header">
+        <h4><span class="label label-warning">1</span> How far do you travel to school (one way only)?</h4>
+    </div>
+
+    <div class="question-content">
+        <button type="button" class="btn btn-default" style="width: 100%">
+            <div class="radio question-option">
+                <label><input type="radio" name="optradio">0-5 km</label>
+            </div>
+        </button>
+
+        <button type="button" class="btn btn-default" style="width: 100%">
+            <div class="radio question-option">
+            <label><input type="radio" name="optradio">5-10 km</label>
+            </div>
+        </button>
+
+
+        <button type="button" class="btn btn-default" style="width: 100%">
+            <div class="radio question-option">
+            <label><input type="radio" name="optradio">10-15 km</label>
+            </div>
+        </button>
+
+        <a href="#question2" data-transition="flip" class="ui-btn ui-corner-all ui-shadow ui-btn-inline next-click">Next</a>
+
+    </div>
+
+</div>
+
+<div data-type="page" id="question2">
+    <div class="question-header">
+        <h4><span class="label label-warning">2</span> I use the following transport to get to school:</h4>
+    </div>
+
+    <div class="question-content">
+        <button type="button" class="btn btn-default" style="width: 100%">
+            <div class="radio question-option">
+                <label><input type="radio" name="optradio">I walk</label>
+            </div>
+        </button>
+
+        <button type="button" class="btn btn-default" style="width: 100%">
+            <div class="radio question-option">
+                <label><input type="radio" name="optradio">I go by bicycle</label>
+            </div>
+        </button>
+
+
+        <button type="button" class="btn btn-default" style="width: 100%">
+            <div class="radio question-option">
+                <label><input type="radio" name="optradio">I take the bus</label>
+            </div>
+        </button>
+
+        <button type="button" class="btn btn-default" style="width: 100%">
+            <div class="radio question-option">
+                <label><input type="radio" name="optradio">I take the train</label>
+            </div>
+        </button>
+
+        <button type="button" class="btn btn-default" style="width: 100%">
+            <div class="radio question-option">
+                <label><input type="radio" name="optradio">I take the tram</label>
+            </div>
+        </button>
+
+        <button type="button" class="btn btn-default" style="width: 100%">
+            <div class="radio question-option">
+                <label><input type="radio" name="optradio">In my parents car</label>
+            </div>
+        </button>
+
+        <a href="#question3" data-transition="turn" class="ui-btn ui-corner-all ui-shadow ui-btn-inline next-click">Next</a>
+
+    </div>
+</div>
+
+<div data-type="page" id="question3">
+    <div class="question-header">
+        <h4><span class="label label-warning">3</span>How much TV do you watch a day?</h4>
+    </div>
+
+    <div class="question-content">
+        <button type="button" class="btn btn-default" style="width: 100%">
+            <div class="radio question-option">
+                <label><input type="radio" name="optradio">1 to 2 hours</label>
+            </div>
+        </button>
+
+        <button type="button" class="btn btn-default" style="width: 100%">
+            <div class="radio question-option">
+                <label><input type="radio" name="optradio">2 to 4 hours</label>
+            </div>
+        </button>
+
+
+        <button type="button" class="btn btn-default" style="width: 100%">
+            <div class="radio question-option">
+                <label><input type="radio" name="optradio">More than 4 hours</label>
+            </div>
+        </button>
+
+        <a href="#question4" data-transition="flip" class="ui-btn ui-corner-all ui-shadow ui-btn-inline next-click">Next</a>
+    </div>
+</div>
+
+
+<div data-type="page" id="question4">
+    <div class="question-header">
+        <h4><span class="label label-warning">4</span>Do you turn the TV off after watching or do you leave it on standby?</h4>
+    </div>
+
+    <div class="question-content">
+        <button type="button" class="btn btn-default" style="width: 100%">
+            <div class="radio question-option">
+                <label><input type="radio" name="optradio">Turn the TV off</label>
+            </div>
+        </button>
+
+        <button type="button" class="btn btn-default" style="width: 100%">
+            <div class="radio question-option">
+                <label><input type="radio" name="optradio">Leave it on Standby</label>
+            </div>
+        </button>
+
+        <a href="#question5" data-transition="flip" class="ui-btn ui-corner-all ui-shadow ui-btn-inline next-click">Next</a>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+<div data-type="page"></div>
+<div data-type="page"></div>
+<div data-type="page"></div>
+
+
+
+
+</body>
+</html>

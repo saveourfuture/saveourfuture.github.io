@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
 
-
     <link rel="stylesheet" type="text/css" href="css/calculator.css"/>
     <link rel="stylesheet" type="text/css" href="css/joinup.css"/>
     <meta charset="utf-8">
@@ -26,8 +25,41 @@
     <![endif]-->
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="js/nav.js"></script>
 
+    <script src="js/nav.js"></script>
+    <script src="js/quiz.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $("#flip").click(function(){
+                $("#panel").slideDown("slow");
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function(){
+            $("#flip2").click(function(){
+                $("#panel2").slideDown("slow");
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function(){
+            $("#flip3").click(function(){
+                $("#panel3").slideDown("slow");
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function(){
+            $("#flip4").click(function(){
+                $("#panel4").slideDown("slow");
+            });
+        });
+    </script>
 
 
 
@@ -83,8 +115,171 @@
         </div>
     </div>
 
-    <div class="calculator-container">
+    <!--header-text-->
+
+    <div class="calculator-header-container">
         <div class="calculator-texts row">
-            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad"</div>
-            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad"</div>
+            <h3 class="calculator-texts-1">Find out what your carbon footprint is.</h3>
+            <p class="calculator-texts-1">Answer the question to find out what your carbon footprint is.</p>
+            <br>
+            <br>
+
+            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 calculator-texts-2">
+                Did you know, our every day activities impact the environment. From the foods you eat, the water you use, even the way you get to school and back home. The fun things like playing playstation in your spare time has an impact on the environment Almost every single action you take has an indirect impact the earth's environment. Measure your carbon footprint to find out how big your carbon footprint is and what you can do to change it.
+            </div>
         </div>
+    </div>
+    <br>
+
+    <!--quiz-->
+
+    <div class="quiz-container">
+
+        <div id="flip">Question 1</div>
+        <div id="panel">
+            <div class="question-header">
+                <h4><span class="label label-warning">1</span> How far do you travel to school (one way only)?</h4>
+            </div>
+
+            <div class="question-content">
+                <button type="button" class="btn btn-default" style="width: 100%">
+                    <div class="radio question-option">
+                        <label><input type="radio" name="optradio">0-5 km</label>
+                    </div>
+                </button>
+
+                <button type="button" class="btn btn-default" style="width: 100%">
+                    <div class="radio question-option">
+                        <label><input type="radio" name="optradio">5-10 km</label>
+                    </div>
+                </button>
+
+
+                <button type="button" class="btn btn-default" style="width: 100%">
+                    <div class="radio question-option">
+                        <label><input type="radio" name="optradio">10-15 km</label>
+                    </div>
+                </button>
+
+            </div>
+        </div>
+
+        <div id="flip2">Question 2</div>
+        <div id="panel2">
+
+            <div class="question-header">
+                <h4><span class="label label-warning">2</span> I use the following transport to get to school:</h4>
+            </div>
+
+            <div class="question-content">
+                <button type="button" class="btn btn-default" style="width: 100%">
+                    <div class="radio question-option">
+                        <label><input type="radio" name="optradio">I walk</label>
+                    </div>
+                </button>
+
+                <button type="button" class="btn btn-default" style="width: 100%">
+                    <div class="radio question-option">
+                        <label><input type="radio" name="optradio">I go by bicycle</label>
+                    </div>
+                </button>
+
+
+                <button type="button" class="btn btn-default" style="width: 100%">
+                    <div class="radio question-option">
+                        <label><input type="radio" name="optradio">I take the bus</label>
+                    </div>
+                </button>
+
+                <button type="button" class="btn btn-default" style="width: 100%">
+                    <div class="radio question-option">
+                        <label><input type="radio" name="optradio">I take the train</label>
+                    </div>
+                </button>
+
+                <button type="button" class="btn btn-default" style="width: 100%">
+                    <div class="radio question-option">
+                        <label><input type="radio" name="optradio">I take the tram</label>
+                    </div>
+                </button>
+
+                <button type="button" class="btn btn-default" style="width: 100%">
+                    <div class="radio question-option">
+                        <label><input type="radio" name="optradio">In my parents car</label>
+                    </div>
+                </button>
+            </div>
+        </div>
+
+
+        <div id="flip3">Question 3</div>
+        <div id="panel3">
+            <div class="question-header">
+                <h4><span class="label label-warning">3</span>How much TV do you watch a day?</h4>
+            </div>
+
+            <div class="question-content">
+                <button type="button" class="btn btn-default" style="width: 100%">
+                    <div class="radio question-option">
+                        <label><input type="radio" name="optradio">1 to 2 hours</label>
+                    </div>
+                </button>
+
+                <button type="button" class="btn btn-default" style="width: 100%">
+                    <div class="radio question-option">
+                        <label><input type="radio" name="optradio">2 to 4 hours</label>
+                    </div>
+                </button>
+
+
+                <button type="button" class="btn btn-default" style="width: 100%">
+                    <div class="radio question-option">
+                        <label><input type="radio" name="optradio">More than 4 hours</label>
+                    </div>
+                </button>
+            </div>
+        </div>
+
+        <div id="flip4">Question 4</div>
+        <div id="panel4">
+            <div class="question-header">
+                <h4><span class="label label-warning">4</span>Do you turn the TV off after watching or do you leave it on standby?</h4>
+            </div>
+
+            <div class="question-content">
+                <button type="button" class="btn btn-default" style="width: 100%">
+                    <div class="radio question-option">
+                        <label><input type="radio" name="optradio">Turn the TV off</label>
+                    </div>
+                </button>
+
+                <button type="button" class="btn btn-default" style="width: 100%">
+                    <div class="radio question-option">
+                        <label><input type="radio" name="optradio">Leave it on Standby</label>
+                    </div>
+                </button>
+            </div>
+         </div>
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+        <!--<iframe width="560" height="315" src="question.html" frameborder="0" allowfullscreen></iframe>-->
+
+</body>
+
+</html>
+
+
+
+
+
