@@ -31,6 +31,10 @@
 
 }
 
+#panel1, #panel5 {
+    padding: 20px !important;
+}
+
 #panel2, #panel3, #panel4, #panel6, #panel7, #panel8 {
     padding: 20px;
     display: none;
