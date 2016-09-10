@@ -1,88 +1,6 @@
-.calculator-text {
-    margin-top: 100px;
-    text-align: center;
-    height: 400px;
-}
-
-.calculator-title {
-    margin-top: 100px;
-    margin-bottom: 100px;
-    color: black;
-}
-
 .calculator-header-container {
     padding-left: 200px;
     padding-right: 200px;
-}
-
-
-
-@media only screen and (max-width: 767px) {
-
-    .calculator-title {
-        font-size: 30px;
-    }
-
-    .calculator-header-container {
-        padding-left: 0 !important;
-        padding-right: 0 !important;
-    }
-
-    .calculator-texts-1 {
-        padding-left: 50px !important;
-        padding-right: 50px !important;
-    }
-
-    .calculator-texts-2 {
-        -webkit-column-count: 1!important;
-        -moz-column-count: 1 !important;
-        column-count: 1 !important;
-    }
-    .quiz-container {
-        padding-left: 0 !important;
-        padding-right: 0 !important;
-    }
-
-    .question-content {
-        width: 100%;
-        height: auto;
-    }
-
-    .tips-calculator {
-        padding-left: 0 !important;
-        padding-right: 0 !important;
-    }
-
-
-
-
-}
-
-
-@media only screen and (max-width: 992px) {
-
-    .calculator-header-container {
-        padding-left: 0 !important;
-        padding-right: 0 !important;
-    }
-
-    .quiz-container {
-        padding-left: 0 !important;
-        padding-right: 0 !important;
-    }
-
-    .tips-calculator {
-        padding-left: 0 !important;
-        padding-right: 0 !important;
-    }
-
-
-}
-
-.calculator-texts-1 {
-    text-align: center;
-    padding-left: 150px;
-    padding-right: 150px;
 }
 
 
@@ -96,21 +14,10 @@
 }
 
 
-.calculator-texts-1 {
-    text-align: center;
-    padding-left: 150px;
-    padding-right: 150px;
-}
-
-
 .quiz-container {
     padding-left: 200px;
     padding-right: 200px;
 
-}
-
-.next-click {
-    float: right !important;
 }
 
 .question-option {
@@ -197,3 +104,81 @@
 .tips-joinin {
     text-align: center;
 }
+
+.facebook-share {
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 767px) {
+
+    .calculator-title {
+        font-size: 30px;
+    }
+
+    .calculator-header-container {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    .calculator-texts-1 {
+        padding-left: 50px !important;
+        padding-right: 50px !important;
+    }
+
+    .calculator-texts-2 {
+        -webkit-column-count: 1!important;
+        -moz-column-count: 1 !important;
+        column-count: 1 !important;
+    }
+    .quiz-container {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    .question-content {
+        width: 100%;
+        height: auto;
+    }
+
+    .tips-calculator {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    .tips-title {
+        font-size: 26px !important;
+    }
+
+
+
+
+}
+
+
+@media only screen and (max-width: 992px) {
+
+    .calculator-header-container {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    .quiz-container {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    .tips-calculator {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+
+}
+
+
+
