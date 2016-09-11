@@ -4,6 +4,7 @@
 
     <link rel="stylesheet" type="text/css" href="css/calculator.css"/>
     <link rel="stylesheet" type="text/css" href="css/joinup.css"/>
+    <link rel="stylesheet" type="text/css" href="css/question.css"/>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -25,10 +26,11 @@
     <![endif]-->
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
-    <script src="js/nav.js"></script>
 
-
+    <!--<script src="js/nav.js"></script>-->
+    <script src="js/question.js"></script>
 
 </head>
 
@@ -37,7 +39,7 @@
 
 
 
-<div data-type="page" id="question1">
+<div id="question1">
     <div class="question-header">
         <h4><span class="label label-warning">1</span> How far do you travel to school (one way only)?</h4>
     </div>
@@ -61,14 +63,13 @@
             <label><input type="radio" name="optradio">10-15 km</label>
             </div>
         </button>
-
-        <a href="#question2" data-transition="flip" class="ui-btn ui-corner-all ui-shadow ui-btn-inline next-click">Next</a>
-
     </div>
+
+    <button type="submit" class="next-click question1" next-question="question2">Next</button>
 
 </div>
 
-<div data-type="page" id="question2">
+<div id="question2">
     <div class="question-header">
         <h4><span class="label label-warning">2</span> I use the following transport to get to school:</h4>
     </div>
@@ -111,12 +112,11 @@
             </div>
         </button>
 
-        <a href="#question3" data-transition="turn" class="ui-btn ui-corner-all ui-shadow ui-btn-inline next-click">Next</a>
-
+        <button type="submit" class="next-click">Next</button>
     </div>
 </div>
 
-<div data-type="page" id="question3">
+<div id="question3">
     <div class="question-header">
         <h4><span class="label label-warning">3</span>How much TV do you watch a day?</h4>
     </div>
@@ -141,12 +141,12 @@
             </div>
         </button>
 
-        <a href="#question4" data-transition="flip" class="ui-btn ui-corner-all ui-shadow ui-btn-inline next-click">Next</a>
+        <button type="submit" class="next-click">Next</button>
     </div>
 </div>
 
 
-<div data-type="page" id="question4">
+<div id="question4">
     <div class="question-header">
         <h4><span class="label label-warning">4</span>Do you turn the TV off after watching or do you leave it on standby?</h4>
     </div>
@@ -164,12 +164,12 @@
             </div>
         </button>
 
-        <a href="#question5" data-transition="flip" class="ui-btn ui-corner-all ui-shadow ui-btn-inline next-click">Next</a>
+        <button type="submit" class="next-click">Next</button>
     </div>
 </div>
 
 
-<div data-type="page" id="question5">
+<div id="question5">
     <div class="question-header">
         <h4><span class="label label-warning">5</span>How much time do you spend using computers and gaming consoles every day?</h4>
     </div>
@@ -193,11 +193,11 @@
             </div>
         </button>
 
-        <a href="#question6" data-transition="flip" class="ui-btn ui-corner-all ui-shadow ui-btn-inline next-click">Next</a>
+        <button type="submit" class="next-click">Next</button>
     </div>
 </div>
 
-<div data-type="page" id="question6">
+<div id="question6">
     <div class="question-header">
         <h4><span class="label label-warning">6</span> How many hours do you leave your bedroom light on every day?</h4>
     </div>
@@ -221,11 +221,11 @@
             </div>
         </button>
 
-        <a href="#question7" data-transition="flip" class="ui-btn ui-corner-all ui-shadow ui-btn-inline next-click">Next</a>
+        <button type="submit" class="next-click">Next</button>
     </div>
 </div>
 
-<div data-type="page" id="question7">
+<div id="question7">
     <div class="question-header">
         <h4><span class="label label-warning">7</span> How many baths do you take a day?</h4>
     </div>
@@ -254,20 +254,54 @@
     </div>
 </div>
 
+<div id="quiz-result">
+
+    <div class="result-percentage">
+        <div class="image-with-text">
+            <img src="images/banner_calculator_result.jpg" class="img-responsive" alt="calculator-result">
+            <div class="text-on-image">
+                <h4>Your carbon footprint is:<br><br>125%</h4>
+            </div>
+        </div>
+    </div>
+
+    <div class="result-infographic">
+        <h4 class="result-title">What does that mean?</h4>
+        <img src="images/infographic.png" class="img-responsive" alt="infographic-result">
+
+    </div>
+
+    <div class="facebook-share">
+        <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&layout=button_count&mobile_iframe=true&width=88&height=20&appId" width="100" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+    </div>
 
 
+    <div class="tips-calculator">
 
+        <h2 class="tips-title">Find out how to reduce your footprint</h2><br>
 
+        <p><span class="glyphicon glyphicon-leaf tips-leaf"></span> Go easy on the showers - Reducing the amount
+            of times you bath or shower a day will save water</p>
+        <p><span class="glyphicon glyphicon-leaf tips-leaf"></span> Unplug those devices - Tell mom and dad to
+            unplug any appliances that are not used during the day. TV's DVD players, Cable TV and even your
+            water heater.</p>
+        <p><span class="glyphicon glyphicon-leaf tips-leaf"></span> Get your family to use the car less - why
+            not take a walk to the shops next time.</p>
+        <p><span class="glyphicon glyphicon-leaf tips-leaf"></span> Remember to recycle whatever materials you
+            can, like bottles, cans, and paper, so they can be collected and remade into new products.</p>
+        <p><span class="glyphicon glyphicon-leaf tips-leaf"></span> Schools can save energy, preserve natural
+            resources, and prevent greenhouse gas emissions by reducing, reusing, and recycling.</p>
+        <p><span class="glyphicon glyphicon-leaf tips-leaf"></span> Can your school or home generate its own
+            renewable energy? Talk with your family and school about the possibility of installing solar panels,
+            a solar water heater, or even a wind turbine.</p>
+    </div>
 
-
-
-
-
-
-
-
-
-
+    <div class="row tips-joinin">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <a href="joinup.html" class="btn btn-warning joinin-button" role="button">Join in</a>
+        </div>
+    </div>
+</div>
 
 </body>
 </html>
