@@ -2,21 +2,18 @@
 <html lang="en">
 <head>
 
+    <link rel="stylesheet" type="text/css" href="css/question.css"/>
+    <link rel="stylesheet" type="text/css" href="css/mystyle.css">
     <link rel="stylesheet" type="text/css" href="css/calculator.css"/>
-    <link rel="stylesheet" type="text/css" href="css/joinup.css"/>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Carbon Footprint Calculator</title>
 
-    <link rel="stylesheet" type="text/css" href="css/joinup.css"/>
-    <link rel="stylesheet" type="text/css" href="css/mystyle.css"/>
-
-
-
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/mystyle.css">
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -25,349 +22,347 @@
     <![endif]-->
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
 
     <script src="js/nav.js"></script>
-    <script src="js/quiz.js"></script>
-
-
+    <script src="js/question.js"></script>
 
 </head>
-
 
 <body>
 
 <div class="container-fluid">
+    <!--navigation-->
 
-    <!--header-text-->
+    <div class="header-container">
 
-    <div class="calculator-header-container">
-        <div class="calculator-texts row">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 calculator-texts-2">
-                Did you know, our every day activities impact the environment. From the foods you eat, the water you use, even the way you get to school and back home. The fun things like playing playstation in your spare time has an impact on the environment Almost every single action you take has an indirect impact the earth's environment. Measure your carbon footprint to find out how big your carbon footprint is and what you can do to change it.
+        <nav class="navbar navbar-fixed-top navbar-background">
+            <div class="container-fluid">
+
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed button-hamburger" data-toggle="collapse" data-target="#sofNav">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="glyphicon glyphicon-menu-hamburger"></span>
+                    </button>
+
+                    <a href="index.html" class="navbar-brand image-logo">
+                        <img src="images/SaveOurFuture-Logo3.png" class="img-responsive logo" alt="logo">
+                    </a>
+
+                </div>
+
+                <div class="collapse navbar-collapse pull-right" id="sofNav">
+                    <ul class="nav navbar-nav menu">
+                        <li><a href="#">How it Works</a></li>
+                        <li><a href="calculator.html">Footprint Calculator</a></li>
+                        <li><a href="challenges.html">Challenges</a></li>
+                        <li><a href="sponsors.html">Sponsors</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right menu">
+                        <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+                        <li><a href="#" style="color: #077717;">Log in</a></li>
+                        <li id="join-up"><a href="joinup.html" style="color: white;">Join up</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container-banner">
+            <div id="mybanner" class="banner slide text-center" data-ride="banner">
+
+                <div class="banner-inner" role="listbox">
+                    <div class="item item-position active" id="banner_news">
+                        <img src="images/banner_calculator.jpg" alt="" style="position:relative; width: 100%;">
+                        <div class="text col-md-6 col-lg-offset-3">
+                            <h1>Footprint Calculator</h1>
+                            <h3>What's your number?</h3>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <br>
-
-    <!--quiz-->
-
-    <div class="quiz-container">
-
-        <h2 class="quiz-title">Quiz</h2>
-        <ul class="nav nav-tabs section-division" id="hide-quiz">
-            <li class="active"><a data-toggle="tab" href="#section1">Section 1</a></li>
-            <li><a data-toggle="tab" href="#section2">Section2</a></li>
-
-        </ul>
-
-        <div class="tab-content">
-            <div id="section1" class="tab-pane fade in active">
-
-                <div id="flip1" class="question-number">Question 1</div>
-                <div id="panel1">
-                    <div class="question-header">
-                        <h4><span class="label label-warning">1</span> How far do you travel to school (one way only)?</h4>
-                    </div>
-
-                    <div class="question-content">
-                        <button type="button" class="btn btn-default answer-width">
-                            <div class="radio question-option">
-                                <label><input type="radio" name="optradio">0-5 km</label>
-                            </div>
-                        </button>
-
-                        <button type="button" class="btn btn-default answer-width">
-                            <div class="radio question-option">
-                                <label><input type="radio" name="optradio">5-10 km</label>
-                            </div>
-                        </button>
-
-
-                        <button type="button" class="btn btn-default answer-width">
-                            <div class="radio question-option">
-                                <label><input type="radio" name="optradio">10-15 km</label>
-                            </div>
-                        </button>
-
-                    </div>
-                </div>
-
-                <div id="flip2" class="question-number">Question 2</div>
-                <div id="panel2">
-
-                    <div class="question-header">
-                        <h4><span class="label label-warning">2</span> I use the following transport to get to school:</h4>
-                    </div>
-
-                    <div class="question-content">
-                        <button type="button" class="btn btn-default answer-width">
-                            <div class="radio question-option">
-                                <label><input type="radio" name="optradio">I walk</label>
-                            </div>
-                        </button>
-
-                        <button type="button" class="btn btn-default answer-width">
-                            <div class="radio question-option">
-                                <label><input type="radio" name="optradio">I go by bicycle</label>
-                            </div>
-                        </button>
-
-
-                        <button type="button" class="btn btn-default answer-width">
-                            <div class="radio question-option">
-                                <label><input type="radio" name="optradio">I take the bus</label>
-                            </div>
-                        </button>
-
-                        <button type="button" class="btn btn-default answer-width">
-                            <div class="radio question-option">
-                                <label><input type="radio" name="optradio">I take the train</label>
-                            </div>
-                        </button>
-
-                        <button type="button" class="btn btn-default answer-width">
-                            <div class="radio question-option">
-                                <label><input type="radio" name="optradio">I take the tram</label>
-                            </div>
-                        </button>
-
-                        <button type="button" class="btn btn-default answer-width">
-                            <div class="radio question-option">
-                                <label><input type="radio" name="optradio">In my parents car</label>
-                            </div>
-                        </button>
-                    </div>
-                </div>
-
-
-                <div id="flip3" class="question-number">Question 3</div>
-                <div id="panel3">
-                    <div class="question-header">
-                        <h4><span class="label label-warning">3</span> How much TV do you watch a day?</h4>
-                    </div>
-
-                    <div class="question-content">
-                        <button type="button" class="btn btn-default answer-width">
-                            <div class="radio question-option">
-                                <label><input type="radio" name="optradio">1 to 2 hours</label>
-                            </div>
-                        </button>
-
-                        <button type="button" class="btn btn-default answer-width">
-                            <div class="radio question-option">
-                                <label><input type="radio" name="optradio">2 to 4 hours</label>
-                            </div>
-                        </button>
-
-
-                        <button type="button" class="btn btn-default answer-width">
-                            <div class="radio question-option">
-                                <label><input type="radio" name="optradio">More than 4 hours</label>
-                            </div>
-                        </button>
-                    </div>
-                </div>
-
-                <div id="flip4" class="question-number">Question 4</div>
-                <div id="panel4">
-                    <div class="question-header">
-                        <h4><span class="label label-warning">4</span> Do you turn the TV off after watching or do you leave it on standby?</h4>
-                    </div>
-
-                    <div class="question-content">
-                        <button type="button" class="btn btn-default answer-width">
-                            <div class="radio question-option">
-                                <label><input type="radio" name="optradio">Turn the TV off</label>
-                            </div>
-                        </button>
-
-                        <button type="button" class="btn btn-default answer-width">
-                            <div class="radio question-option">
-                                <label><input type="radio" name="optradio">Leave it on Standby</label>
-                            </div>
-                        </button>
-                    </div>
-                </div>
-
-            </div>
-
-            <div id="section2" class="tab-pane fade">
-
-                <div id="flip5" class="question-number">Question 5</div>
-                <div id="panel5">
-                    <div class="question-header">
-                        <h4><span class="label label-warning">5</span> How much time do you spend using computers and gaming consoles every day?</h4>
-                    </div>
-                    <div class="question-content">
-                        <button type="button" class="btn btn-default answer-width">
-                            <div class="radio question-option">
-                                <label><input type="radio" name="optradio">1 to 2 hours</label>
-                            </div>
-                        </button>
-
-                        <button type="button" class="btn btn-default answer-width">
-                            <div class="radio question-option">
-                                <label><input type="radio" name="optradio">2 to 3 hours</label>
-                            </div>
-                        </button>
-
-                        <button type="button" class="btn btn-default answer-width">
-                            <div class="radio question-option">
-                                <label><input type="radio" name="optradio">More than 3 hours</label>
-                            </div>
-                        </button>
-                    </div>
-                </div>
-
-
-                <div id="flip6" class="question-number">Question 6</div>
-                <div id="panel6">
-                    <div class="question-header">
-                        <h4><span class="label label-warning">6</span> How many hours do you leave your bedroom light on every day?</h4>
-                    </div>
-
-                    <div class="question-content">
-                        <button type="button" class="btn btn-default answer-width">
-                            <div class="radio question-option">
-                                <label><input type="radio" name="optradio">1 to 2 hours</label>
-                            </div>
-                        </button>
-
-                        <button type="button" class="btn btn-default answer-width">
-                            <div class="radio question-option">
-                                <label><input type="radio" name="optradio">2 to 4 hours</label>
-                            </div>
-                        </button>
-
-                        <button type="button" class="btn btn-default answer-width">
-                            <div class="radio question-option">
-                                <label><input type="radio" name="optradio">more than 4 hours</label>
-                            </div>
-                        </button>
-                    </div>
-                </div>
-
-                <div id="flip7" class="question-number">Question 7</div>
-                <div id="panel7">
-                    <div class="question-header">
-                        <h4><span class="label label-warning">7</span> How many baths do you take a day?</h4>
-                    </div>
-
-                    <div class="question-content">
-                        <button type="button" class="btn btn-default answer-width">
-                            <div class="radio question-option">
-                                <label><input type="radio" name="optradio">1</label>
-                            </div>
-                        </button>
-
-                        <button type="button" class="btn btn-default answer-width">
-                            <div class="radio question-option">
-                                <label><input type="radio" name="optradio">2</label>
-                            </div>
-                        </button>
-
-                        <button type="button" class="btn btn-default answer-width">
-                            <div class="radio question-option">
-                                <label><input type="radio" name="optradio">3 or more</label>
-                            </div>
-                        </button>
-                    </div>
-
-                </div>
-
-                <div id="flip8" class="question-number">Question 8</div>
-                <div id="panel8">
-                    <div class="question-header">
-                        <h4><span class="label label-warning">8</span> How many baths do you take a day?</h4>
-                    </div>
-
-                    <div class="question-content">
-                        <button type="button" class="btn btn-default answer-width">
-                            <div class="radio question-option">
-                                <label><input type="radio" name="optradio">1</label>
-                            </div>
-                        </button>
-
-                        <button type="button" class="btn btn-default answer-width">
-                            <div class="radio question-option">
-                                <label><input type="radio" name="optradio">2</label>
-                            </div>
-                        </button>
-
-                        <button type="button" class="btn btn-default answer-width">
-                            <div class="radio question-option">
-                                <label><input type="radio" name="optradio">3 or more</label>
-                            </div>
-                        </button>
-                    </div>
-
-                    <div class="submit-button">
-                        <input type="submit" class="btn btn-info" value="Submit" id="submit-quiz"></a>
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-
-        <div id="quiz-result">
-
-            <div class="result-percentage">
-                <div class="image-with-text">
-                    <img src="images/banner_calculator_result.jpg" class="img-responsive" alt="calculator-result">
-                    <div class="text-on-image">
-                        <h4>Your carbon footprint is:<br><br>125%</h4>
-                    </div>
-                </div>
-            </div>
-
-            <div class="result-infographic">
-                <h4 class="result-title">What does that mean?</h4>
-                <img src="images/infographic.png" class="img-responsive" alt="infographic-result">
-
-            </div>
-
-            <div class="facebook-share">
-                <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&layout=button_count&mobile_iframe=true&width=88&height=20&appId" width="100" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
-            </div>
-         </div>
-    </div>
-
-    <div class="row tips-calculator">
+    <div class="row our-values text-center">
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <h2 class="tips-title">Find out how to reduce your footprint</h2><br>
-
-            <p><span class="glyphicon glyphicon-leaf tips-leaf"></span> Go easy on the showers - Reducing the amount of times you bath or shower a day will save water</p>
-            <p><span class="glyphicon glyphicon-leaf tips-leaf"></span> Unplug those devices -  Tell mom and dad to unplug any appliances that are not used during the day. TV's DVD players, Cable TV and even your water heater.</p>
-            <p><span class="glyphicon glyphicon-leaf tips-leaf"></span> Get your family to use the car less - why not take a walk to the shops next time.</p>
-            <p><span class="glyphicon glyphicon-leaf tips-leaf"></span> Remember to recycle whatever materials you can, like bottles, cans, and paper, so they can be collected and remade into new products.</p>
-            <p><span class="glyphicon glyphicon-leaf tips-leaf"></span> Schools can save energy, preserve natural resources, and prevent greenhouse gas emissions by reducing, reusing, and recycling.</p>
-            <p><span class="glyphicon glyphicon-leaf tips-leaf"></span> Can your school or home generate its own renewable energy? Talk with your family and school about the possibility of installing solar panels, a solar water heater, or even a wind turbine.</p>
+            <h2>What's your number</h2><br>
+            <p>Did you know, our every day activities impact the environment. From the foods you eat, the water you use, even the way you get to school and back home.</p>
+            <p>Complete the quiz and find out how big your carbon footprint is and what you can do to change it.</p>
         </div>
+    </div>
+</div>
 
-        <div class="row tips-joinin">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <a href="joinup.html" class="btn btn-warning joinin-button" role="button">Join in</a>
+
+<div id="start-quiz">
+    <h4>Measure your carbon footprint!!</h4>
+    <p>Measure your carbon footprint to find out how big your carbon footprint is and what you can do to change it!</p>
+    <button type="submit" id="get-started">Get started</button>
+</div>
+
+
+<div id="question1">
+    <div class="question-header">
+        <h4><span class="label label-warning">1</span> How far do you travel to school (one way only)?</h4>
+    </div>
+
+    <div class="question-content">
+        <button type="button" class="btn btn-default" style="width: 100%">
+            <div class="radio question-option">
+                <label><input type="radio" name="optradio">0-5 km</label>
+            </div>
+        </button>
+
+        <button type="button" class="btn btn-default" style="width: 100%">
+            <div class="radio question-option">
+                <label><input type="radio" name="optradio">5-10 km</label>
+            </div>
+        </button>
+
+
+        <button type="button" class="btn btn-default" style="width: 100%">
+            <div class="radio question-option">
+                <label><input type="radio" name="optradio">10-15 km</label>
+            </div>
+        </button>
+    </div>
+
+    <button type="submit" class="next-click question1" next-question="question2">Next</button>
+
+</div>
+
+<div id="question2">
+    <div class="question-header">
+        <h4><span class="label label-warning">2</span> I use the following transport to get to school:</h4>
+    </div>
+
+    <div class="question-content">
+        <button type="button" class="btn btn-default" style="width: 100%">
+            <div class="radio question-option">
+                <label><input type="radio" name="optradio">I walk</label>
+            </div>
+        </button>
+
+        <button type="button" class="btn btn-default" style="width: 100%">
+            <div class="radio question-option">
+                <label><input type="radio" name="optradio">I go by bicycle</label>
+            </div>
+        </button>
+
+
+        <button type="button" class="btn btn-default" style="width: 100%">
+            <div class="radio question-option">
+                <label><input type="radio" name="optradio">I take the bus</label>
+            </div>
+        </button>
+
+        <button type="button" class="btn btn-default" style="width: 100%">
+            <div class="radio question-option">
+                <label><input type="radio" name="optradio">I take the train</label>
+            </div>
+        </button>
+
+        <button type="button" class="btn btn-default" style="width: 100%">
+            <div class="radio question-option">
+                <label><input type="radio" name="optradio">I take the tram</label>
+            </div>
+        </button>
+
+        <button type="button" class="btn btn-default" style="width: 100%">
+            <div class="radio question-option">
+                <label><input type="radio" name="optradio">In my parents car</label>
+            </div>
+        </button>
+
+        <button type="submit" class="next-click">Next</button>
+    </div>
+</div>
+
+<div id="question3">
+    <div class="question-header">
+        <h4><span class="label label-warning">3</span>How much TV do you watch a day?</h4>
+    </div>
+
+    <div class="question-content">
+        <button type="button" class="btn btn-default" style="width: 100%">
+            <div class="radio question-option">
+                <label><input type="radio" name="optradio">1 to 2 hours</label>
+            </div>
+        </button>
+
+        <button type="button" class="btn btn-default" style="width: 100%">
+            <div class="radio question-option">
+                <label><input type="radio" name="optradio">2 to 4 hours</label>
+            </div>
+        </button>
+
+
+        <button type="button" class="btn btn-default" style="width: 100%">
+            <div class="radio question-option">
+                <label><input type="radio" name="optradio">More than 4 hours</label>
+            </div>
+        </button>
+
+        <button type="submit" class="next-click">Next</button>
+    </div>
+</div>
+
+
+<div id="question4">
+    <div class="question-header">
+        <h4><span class="label label-warning">4</span>Do you turn the TV off after watching or do you leave it on standby?</h4>
+    </div>
+
+    <div class="question-content">
+        <button type="button" class="btn btn-default" style="width: 100%">
+            <div class="radio question-option">
+                <label><input type="radio" name="optradio">Turn the TV off</label>
+            </div>
+        </button>
+
+        <button type="button" class="btn btn-default" style="width: 100%">
+            <div class="radio question-option">
+                <label><input type="radio" name="optradio">Leave it on Standby</label>
+            </div>
+        </button>
+
+        <button type="submit" class="next-click">Next</button>
+    </div>
+</div>
+
+
+<div id="question5">
+    <div class="question-header">
+        <h4><span class="label label-warning">5</span>How much time do you spend using computers and gaming consoles every day?</h4>
+    </div>
+
+    <div class="question-content">
+        <button type="button" class="btn btn-default" style="width: 100%">
+            <div class="radio question-option">
+                <label><input type="radio" name="optradio">1 to 2 hours</label>
+            </div>
+        </button>
+
+        <button type="button" class="btn btn-default" style="width: 100%">
+            <div class="radio question-option">
+                <label><input type="radio" name="optradio">2 to 4 hours</label>
+            </div>
+        </button>
+
+        <button type="button" class="btn btn-default" style="width: 100%">
+            <div class="radio question-option">
+                <label><input type="radio" name="optradio">more than 4 hours</label>
+            </div>
+        </button>
+
+        <button type="submit" class="next-click">Next</button>
+    </div>
+</div>
+
+<div id="question6">
+    <div class="question-header">
+        <h4><span class="label label-warning">6</span> How many hours do you leave your bedroom light on every day?</h4>
+    </div>
+
+    <div class="question-content">
+        <button type="button" class="btn btn-default" style="width: 100%">
+            <div class="radio question-option">
+                <label><input type="radio" name="optradio">1 to 2 hours</label>
+            </div>
+        </button>
+
+        <button type="button" class="btn btn-default" style="width: 100%">
+            <div class="radio question-option">
+                <label><input type="radio" name="optradio">2 to 3 hours</label>
+            </div>
+        </button>
+
+        <button type="button" class="btn btn-default" style="width: 100%">
+            <div class="radio question-option">
+                <label><input type="radio" name="optradio">More than 3 hours</label>
+            </div>
+        </button>
+
+        <button type="submit" class="next-click">Next</button>
+    </div>
+</div>
+
+<div id="question7">
+    <div class="question-header">
+        <h4><span class="label label-warning">7</span> How many baths do you take a day?</h4>
+    </div>
+
+    <div class="question-content">
+        <button type="button" class="btn btn-default" style="width: 100%">
+            <div class="radio question-option">
+                <label><input type="radio" name="optradio">1</label>
+            </div>
+        </button>
+
+        <button type="button" class="btn btn-default" style="width: 100%">
+            <div class="radio question-option">
+                <label><input type="radio" name="optradio">2</label>
+            </div>
+        </button>
+
+        <button type="button" class="btn btn-default" style="width: 100%">
+            <div class="radio question-option">
+                <label><input type="radio" name="optradio">3 or more</label>
+            </div>
+        </button>
+    </div>
+    <div>
+        <input type="submit" class="btn btn-info" id="submit-quiz" value="Submit"></a>
+    </div>
+</div>
+
+<div id="quiz-result">
+
+    <div class="result-percentage">
+        <div class="image-with-text">
+            <img src="images/banner_calculator_result.jpg" class="img-responsive" alt="calculator-result">
+            <div class="text-on-image">
+                <h4>Your carbon footprint is:<br><br>125%</h4>
             </div>
         </div>
     </div>
 
+    <div class="result-infographic">
+        <h4 class="result-title">What does that mean?</h4>
+        <img src="images/infographic.png" class="img-responsive" alt="infographic-result">
+
+    </div>
+
+    <div class="facebook-share">
+        <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&layout=button_count&mobile_iframe=true&width=88&height=20&appId" width="100" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+    </div>
 
 
+    <div class="tips-calculator">
 
+        <h2 class="tips-title">Find out how to reduce your footprint</h2><br>
 
+        <p><span class="glyphicon glyphicon-leaf tips-leaf"></span> Go easy on the showers - Reducing the amount
+            of times you bath or shower a day will save water</p>
+        <p><span class="glyphicon glyphicon-leaf tips-leaf"></span> Unplug those devices - Tell mom and dad to
+            unplug any appliances that are not used during the day. TV's DVD players, Cable TV and even your
+            water heater.</p>
+        <p><span class="glyphicon glyphicon-leaf tips-leaf"></span> Get your family to use the car less - why
+            not take a walk to the shops next time.</p>
+        <p><span class="glyphicon glyphicon-leaf tips-leaf"></span> Remember to recycle whatever materials you
+            can, like bottles, cans, and paper, so they can be collected and remade into new products.</p>
+        <p><span class="glyphicon glyphicon-leaf tips-leaf"></span> Schools can save energy, preserve natural
+            resources, and prevent greenhouse gas emissions by reducing, reusing, and recycling.</p>
+        <p><span class="glyphicon glyphicon-leaf tips-leaf"></span> Can your school or home generate its own
+            renewable energy? Talk with your family and school about the possibility of installing solar panels,
+            a solar water heater, or even a wind turbine.</p>
+    </div>
 
-
-
-
-
-
+    <div class="row tips-joinin">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <a href="joinup.html" class="btn btn-warning joinin-button" role="button">Join in</a>
+        </div>
+    </div>
+</div>
 
 </body>
-
 </html>
-
-
-
-
-
